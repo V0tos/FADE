@@ -59,13 +59,18 @@ body {
     margin-top: 30px;
 }
 
-.download a {
-    background: white;
-    color: black;
-    padding: 14px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
+.appstore-btn img {
+    width: 220px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.appstore-btn:hover img {
+    transform: scale(1.05);
+}
+
+.appstore-btn:active img {
+    transform: scale(0.94);
+    opacity: 0.85;
 }
 
 /* Phone */
@@ -110,7 +115,10 @@ footer a {
     margin: 0 10px;
 }
 </style>
-<link rel="icon" type="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
+
+<!-- Favicon (kept original name, encoded spaces) -->
+<link rel="icon" type="image/png" href="ChatGPT%20Image%20Nov%207,%202025%20at%2007_51_14%20PM%20copy%204.png">
+
 </head>
 
 <body>
@@ -139,7 +147,10 @@ footer a {
 
 <!-- DOWNLOAD -->
 <div class="download">
-    <a href="https://apps.apple.com">Download on the App Store</a>
+    <a href="https://apps.apple.com" class="appstore-btn">
+        <img src="toppng.com-app-store-official-download-badge-png-2970x1980.png" 
+             alt="Download on the App Store">
+    </a>
 </div>
 
 <!-- PHONE -->

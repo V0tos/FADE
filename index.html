@@ -1,81 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Hair Mastery</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-        }
-        .mockup {
-            display: flex;
-            justify-content: center;
-            margin: 20px auto;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .feature-card {
-            background-color: #1E1E1E;
-            border-radius: 8px;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-        a {
-            color: #1DB954;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FADE - AI Hair Analysis</title>
+
+<style>
+body {
+    background-color: #000;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Nav */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+
+.nav h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.stats h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.stats p {
+    margin: 5px 0 0 0;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+/* Download Button */
+.download {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download a {
+    background: white;
+    color: black;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Phone */
+.mockup {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.mockup img {
+    width: 300px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.feature-card {
+    background: #0f0f0f;
+    border: 1px solid #222;
+    border-radius: 14px;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #777;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+    margin: 0 10px;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Transform your appearance by mastering your hair</h1>
-        <p>Utilizing AI-powered hair and face analysis for stunning results.</p>
-    </header>
-    <div class="mockup">
-        <img src="ChatGPT Image Feb 1, 2026 at 11_43_15 PM.png" alt="iPhone Mockup" width="300">
+
+<!-- NAV -->
+<div class="nav">
+    <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM.png" alt="FADE Logo">
+    <h2>FADE</h2>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+    <div>
+        <h1>10K+</h1>
+        <p>DOWNLOADS</p>
     </div>
-    <div class="features">
-        <div class="feature-card">
-            <h3>Hair Score</h3>
-            <p>Get personalized insights into your hair health.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Facial Analysis</h3>
-            <p>Understand your facial features and enhancements.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Product Recommendations</h3>
-            <p>Discover products tailored to your needs.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Progress Tracking</h3>
-            <p>Monitor your transformation journey with ease.</p>
-        </div>
+    <div>
+        <h1>4.5</h1>
+        <p>RATING</p>
     </div>
-    <footer>
-        <a href="/faq">FAQ</a> |
-        <a href="/terms">Terms of Service</a> |
-        <a href="/privacy">Privacy Policy</a>
-        <br>
-        <button style="background-color: #1DB954; color: white; border: none; padding: 10px 20px; border-radius: 5px;"><a href="https://apps.apple.com" style="color: white;">Download on the App Store</a></button>
-    </footer>
+    <div>
+        <h1>95%</h1>
+        <p>ACCURACY</p>
+    </div>
+</div>
+
+<!-- DOWNLOAD -->
+<div class="download">
+    <a href="https://apps.apple.com">Download on the App Store</a>
+</div>
+
+<!-- PHONE -->
+<div class="mockup">
+    <img src="ChatGPT Image Feb 1, 2026 at 11_43_15 PM.png" alt="App Mockup">
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <div class="feature-card">
+        <h3>Hair Score</h3>
+        <p>AI-powered haircut scoring based on facial structure.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Face Analysis</h3>
+        <p>Detailed symmetry and structure breakdown.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Product Suggestions</h3>
+        <p>Personalized styling and growth recommendations.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Progress Tracking</h3>
+        <p>Track improvements and transformation over time.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <a href="/faq">FAQ</a> |
+    <a href="/terms">Terms of Service</a> |
+    <a href="/privacy">Privacy Policy</a>
+</footer>
+
 </body>
 </html>

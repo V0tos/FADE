@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px 40px;
+    position: relative; /* Needed for support button positioning */
 }
 
 .nav img {
@@ -31,6 +32,39 @@ body {
 .nav h2 {
     margin: 0;
     font-weight: 600;
+}
+
+/* Support Button */
+.support-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background: #ffffff;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.support-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+.support-btn:active {
+    transform: scale(0.92);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.support-icon {
+    width: 18px;
+    height: 18px;
 }
 
 /* Stats */
@@ -116,7 +150,6 @@ footer a {
 }
 </style>
 
-<!-- Favicon (kept original name, encoded spaces) -->
 <link rel="icon" type="image/png" href="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
 
 </head>
@@ -127,6 +160,14 @@ footer a {
 <div class="nav">
     <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png" alt="FADE Logo">
     <h2>FADE</h2>
+
+    <a href="support.html" class="support-btn">
+        <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 20l1.8-3.6A7.93 7.93 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+        </svg>
+        Support
+    </a>
 </div>
 
 <!-- STATS -->

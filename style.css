@@ -74,3 +74,34 @@ h1, h2, h3 {
   background-color: rgba(0, 0, 255, 0.3);
   opacity: 0.5;
 }
+
+.support-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background: #ffffff;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 6px 18px rgba(255,255,255,0.15);
+}
+
+.support-btn:hover {
+    transform: translateY(-2px);
+}
+
+.support-btn:active {
+    transform: scale(0.92);
+    box-shadow: 0 3px 10px rgba(255,255,255,0.1);
+}
+
+.support-icon {
+    width: 18px;
+    height: 18px;
+}

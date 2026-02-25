@@ -12,146 +12,154 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-/* Top Nav */
+/* Main wrapper */
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* NAV */
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px; /* reduced from 40px */
-    position: relative;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.nav h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Support Button */
 .support-btn {
-    position: static; /* remove absolute positioning */
     background: #ffffff;
     color: #000;
-    padding: 8px 14px;
-    border-radius: 12px;
+    padding: 6px 12px;
+    border-radius: 10px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    font-size: 13px;
     font-weight: 600;
-    font-size: 14px;
 }
 
-.support-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
-}
-
-.support-btn:active {
-    transform: scale(0.92);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.support-icon {
-    width: 18px;
-    height: 18px;
-}
-
-/* Stats */
+/* STATS */
 .stats {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
     margin-top: 30px;
     text-align: center;
+}
+
+.stats div {
+    flex: 1;
 }
 
 .stats h1 {
     margin: 0;
-    font-size: 33.6px; /* Changed from 48px to 0.7x */
+    font-size: 22px;
 }
 
 .stats p {
-    margin: 5px 0 0 0;
+    margin: 4px 0 0 0;
+    font-size: 11px;
+    letter-spacing: 1px;
     color: #888;
-    letter-spacing: 2px;
 }
 
-/* Download Button */
+/* DOWNLOAD */
 .download {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 .appstore-btn img {
-    width: 220px;
-    transition: transform 0.15s ease, opacity 0.15s ease;
+    width: 180px;
+    max-width: 100%;
 }
 
-.appstore-btn:hover img {
-    transform: scale(1.05);
-}
-
-.appstore-btn:active img {
-    transform: scale(0.94);
-    opacity: 0.85;
-}
-
-/* Phone */
+/* MOCKUP */
 .mockup {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .mockup img {
-    width: 300px;
+    width: 100%;
+    max-width: 260px;
 }
 
-/* Features */
+/* FEATURES */
 .features {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .feature-card {
     background: #0f0f0f;
     border: 1px solid #222;
     border-radius: 14px;
-    padding: 25px;
-    width: 220px;
+    padding: 20px;
     text-align: center;
 }
 
-/* Footer */
+.feature-card h3 {
+    margin: 0 0 8px 0;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 0 20px 0;
+    font-size: 13px;
     color: #777;
 }
 
 footer a {
     color: #777;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 </style>
 
 <link rel="icon" type="image/png" href="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
-
 </head>
 
 <body>
 
+<div class="wrapper">
+
 <!-- NAV -->
 <div class="nav">
-    <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png" alt="FADE Logo">
-    <h2>FADE</h2>
+    <div class="nav-left">
+        <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png" alt="FADE Logo">
+        <h2>FADE</h2>
+    </div>
 
     <a href="support.html" class="support-btn">
-        <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 20l1.8-3.6A7.93 7.93 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-        </svg>
         Support
     </a>
 </div>
@@ -201,7 +209,7 @@ footer a {
     </div>
     <div class="feature-card">
         <h3>Progress Tracking</h3>
-        <p>Track improvements and transformation over time.</p>
+        <p>Track improvements over time.</p>
     </div>
 </div>
 
@@ -211,6 +219,8 @@ footer a {
     <a href="/terms">Terms of Service</a> |
     <a href="/privacy">Privacy Policy</a>
 </footer>
+
+</div>
 
 </body>
 </html>

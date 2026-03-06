@@ -6,6 +6,7 @@
 <title>FADE - AI Hair Analysis</title>
 
 <style>
+
 body {
     background-color: #000;
     color: white;
@@ -15,14 +16,15 @@ body {
     overflow-x: hidden;
 }
 
-/* Main wrapper */
+/* Wrapper */
 .wrapper {
-    max-width: 500px;
+    max-width: 520px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* NAV */
+
 .nav {
     display: flex;
     align-items: center;
@@ -39,18 +41,15 @@ body {
     width: 28px;
     height: 28px;
     border-radius: 6px;
-    object-fit: contain;
 }
 
 .nav h2 {
     margin: 0;
     font-size: 18px;
-    font-weight: 600;
 }
 
-/* Support Button */
 .support-btn {
-    background: #ffffff;
+    background: #fff;
     color: #000;
     padding: 6px 12px;
     border-radius: 10px;
@@ -59,11 +58,31 @@ body {
     font-weight: 600;
 }
 
+/* HERO TEXT */
+
+.hero {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #aaa;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
 /* STATS */
+
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
 }
 
@@ -84,32 +103,54 @@ body {
 }
 
 /* DOWNLOAD */
+
 .download {
     text-align: center;
-    margin: 30px 0;
+    margin: 35px 0;
+}
+
+.download p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 12px;
 }
 
 .appstore-btn img {
-    width: 180px;
-    max-width: 100%;
+    width: 190px;
 }
 
 /* MOCKUP */
+
 .mockup {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.mockup::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0,255,140,0.25), transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(40px);
 }
 
 .mockup img {
     width: 100%;
     max-width: 260px;
+    position: relative;
 }
 
 /* FEATURES */
+
 .features {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .feature-card {
@@ -131,6 +172,7 @@ body {
 }
 
 /* FOOTER */
+
 footer {
     text-align: center;
     padding: 40px 0 20px 0;
@@ -143,9 +185,11 @@ footer a {
     text-decoration: none;
     margin: 0 8px;
 }
+
 </style>
 
 <link rel="icon" type="image/png" href="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
+
 </head>
 
 <body>
@@ -153,9 +197,10 @@ footer a {
 <div class="wrapper">
 
 <!-- NAV -->
+
 <div class="nav">
     <div class="nav-left">
-        <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png" alt="FADE Logo">
+        <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
         <h2>FADE</h2>
     </div>
 
@@ -164,60 +209,88 @@ footer a {
     </a>
 </div>
 
+
+<!-- HERO -->
+
+<div class="hero">
+    <h1>Find Your Best Haircut</h1>
+    <p>AI analyzes your facial structure and recommends hairstyles that actually fit your face.</p>
+</div>
+
+
 <!-- STATS -->
+
 <div class="stats">
     <div>
-        <h1>10K+</h1>
-        <p>DOWNLOADS</p>
+        <h1>1K+</h1>
+        <p>USERS</p>
     </div>
     <div>
-        <h1>4.5</h1>
-        <p>RATING</p>
+        <h1>4.5★</h1>
+        <p>APP RATING</p>
     </div>
     <div>
         <h1>95%</h1>
-        <p>ACCURACY</p>
+        <p>MATCH ACCURACY</p>
     </div>
 </div>
+
 
 <!-- DOWNLOAD -->
+
 <div class="download">
-    <a href="https://apps.apple.com" class="appstore-btn">
-        <img src="toppng.com-app-store-official-download-badge-png-2970x1980.png" 
-             alt="Download on the App Store">
-    </a>
+
+<p>Get your haircut score in seconds</p>
+
+<a href="https://apps.apple.com" class="appstore-btn">
+<img src="toppng.com-app-store-official-download-badge-png-2970x1980.png">
+</a>
+
 </div>
+
 
 <!-- PHONE -->
+
 <div class="mockup">
-    <img src="Screenshot 2026-02-28 at 23.58.51.png" alt="App Mockup">
+<img src="Screenshot 2026-02-28 at 23.58.51.png">
 </div>
+
 
 <!-- FEATURES -->
+
 <div class="features">
-    <div class="feature-card">
-        <h3>Hair Score</h3>
-        <p>AI-powered haircut scoring based on facial structure.</p>
-    </div>
-    <div class="feature-card">
-        <h3>Face Analysis</h3>
-        <p>Detailed symmetry and structure breakdown.</p>
-    </div>
-    <div class="feature-card">
-        <h3>Product Suggestions</h3>
-        <p>Personalized styling and growth recommendations.</p>
-    </div>
-    <div class="feature-card">
-        <h3>Progress Tracking</h3>
-        <p>Track improvements over time.</p>
-    </div>
+
+<div class="feature-card">
+<h3>Hair Score</h3>
+<p>AI-powered haircut scoring based on facial structure.</p>
 </div>
 
+<div class="feature-card">
+<h3>Face Analysis</h3>
+<p>Detailed symmetry and structure breakdown.</p>
+</div>
+
+<div class="feature-card">
+<h3>Product Suggestions</h3>
+<p>Personalized styling and growth recommendations.</p>
+</div>
+
+<div class="feature-card">
+<h3>Progress Tracking</h3>
+<p>Track improvements over time.</p>
+</div>
+
+</div>
+
+
 <!-- FOOTER -->
+
 <footer>
-    <a href="/faq">FAQ</a> |
-    <a href="/terms">Terms of Service</a> |
-    <a href="/privacy">Privacy Policy</a>
+
+<a href="/faq">FAQ</a> |
+<a href="/terms">Terms of Service</a> |
+<a href="/privacy">Privacy Policy</a>
+
 </footer>
 
 </div>

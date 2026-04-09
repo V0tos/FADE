@@ -3,32 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FADE - AI Hair Analysis</title>
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
 
 <style>
 
-body {
-    background-color: #000;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-/* Wrapper */
+/* BODY */
+body {
+    background: #000;
+    color: white;
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* WRAPPER */
 .wrapper {
     max-width: 520px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
 }
 
 /* NAV */
-
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-left {
@@ -40,130 +51,163 @@ body {
 .nav img {
     width: 28px;
     height: 28px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .nav h2 {
-    margin: 0;
     font-size: 18px;
-}
-
-.support-btn {
-    background: #fff;
-    color: #000;
-    padding: 6px 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 13px;
     font-weight: 600;
 }
 
-/* HERO TEXT */
+/* BUTTON */
+.support-btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
 
+.support-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+}
+
+/* HERO */
 .hero {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 .hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .hero p {
     font-size: 15px;
     color: #aaa;
-    max-width: 420px;
-    margin: 0 auto;
+    margin-top: 12px;
+    line-height: 1.6;
 }
 
 /* STATS */
-
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 40px;
     text-align: center;
-}
-
-.stats div {
-    flex: 1;
 }
 
 .stats h1 {
-    margin: 0;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .stats p {
-    margin: 4px 0 0 0;
     font-size: 11px;
+    color: #777;
     letter-spacing: 1px;
-    color: #888;
 }
 
 /* DOWNLOAD */
-
 .download {
     text-align: center;
-    margin: 10px 0;
-}
-
-.download p {
-    color: #bbb;
-    font-size: 14px;
-    margin-bottom: 12px;
+    margin: 25px 0;
 }
 
 .appstore-btn img {
-    width: 190px;
+    width: 180px;
+    transition: transform 0.2s ease;
 }
 
-/* MOCKUP */
+.appstore-btn img:hover {
+    transform: scale(1.05);
+}
 
+/* MOCKUP SECTION */
 .mockup {
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
     position: relative;
 }
 
+/* GLOW */
 .mockup::before {
     content: "";
     position: absolute;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(0,255,140,0.25), transparent 70%);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(40px);
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(0,255,140,0.35), transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
 }
 
-.mockup img {
+/* PHONE FRAME */
+.phone {
+    position: relative;
+    border-radius: 36px;
+    overflow: hidden;
+    border: 12px solid #111;
+    box-shadow: 
+        0 0 40px rgba(0,255,140,0.25),
+        0 20px 60px rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+/* IMAGE INSIDE */
+.phone img {
     width: 100%;
     max-width: 260px;
-    position: relative;
+    display: block;
+
+    /* THIS FIXES YOUR "ROUGH" LOOK */
+    image-rendering: auto;
+    filter: contrast(1.02) saturate(1.05);
+
+    transition: transform 0.4s ease;
 }
 
+.phone:hover img {
+    transform: scale(1.03);
+}
 
 /* FOOTER */
-
 footer {
     text-align: center;
-    padding: 40px 0 20px 0;
+    margin-top: 50px;
     font-size: 13px;
-    color: #777;
+    color: #666;
 }
 
 footer a {
-    color: #777;
+    color: #888;
     text-decoration: none;
     margin: 0 8px;
 }
 
-</style>
+footer a:hover {
+    color: white;
+}
 
-<link rel="icon" type="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
+/* MOBILE */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .phone img {
+        max-width: 230px;
+    }
+}
+
+</style>
 
 </head>
 
@@ -172,29 +216,22 @@ footer a {
 <div class="wrapper">
 
 <!-- NAV -->
-
 <div class="nav">
     <div class="nav-left">
         <img src="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
         <h2>FADE</h2>
     </div>
 
-    <a href="support.html" class="support-btn">
-        Support
-    </a>
+    <a href="support.html" class="support-btn">Support</a>
 </div>
 
-
 <!-- HERO -->
-
 <div class="hero">
     <h1>Find Your Best Haircut</h1>
     <p>AI analyzes your facial structure and recommends hairstyles that actually fit your face.</p>
 </div>
 
-
 <!-- STATS -->
-
 <div class="stats">
     <div>
         <h1>1K+</h1>
@@ -210,35 +247,25 @@ footer a {
     </div>
 </div>
 
-
 <!-- DOWNLOAD -->
-
 <div class="download">
-
-<a href="https://apps.apple.com/us/app/fade-ai-improve-your-looks/id6759229605" 
-   class="appstore-btn" 
-   target="_blank">
-<img src="toppng.com-app-store-official-download-badge-png-2970x1980.png">
-</a>
-
+    <a href="https://apps.apple.com/us/app/fade-ai-improve-your-looks/id6759229605" target="_blank" class="appstore-btn">
+        <img src="toppng.com-app-store-official-download-badge-png-2970x1980.png">
+    </a>
 </div>
 
-
-<!-- PHONE -->
-
+<!-- PHONE MOCKUP -->
 <div class="mockup">
-<img src="ChatGPT Image Apr 8, 2026 at 11_22_54 AM.png">
+    <div class="phone">
+        <img src="ChatGPT Image Apr 8, 2026 at 11_22_54 AM.png">
+    </div>
 </div>
-
 
 <!-- FOOTER -->
-
 <footer>
-
-<a href="/faq">FAQ</a> |
-<a href="/terms">Terms of Service</a> |
-<a href="/privacy">Privacy Policy</a>
-
+    <a href="/faq">FAQ</a> |
+    <a href="/terms">Terms</a> |
+    <a href="/privacy">Privacy</a>
 </footer>
 
 </div>

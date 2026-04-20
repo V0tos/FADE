@@ -1,201 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FormX — Train Harder. Track Smarter.</title>
-<meta name="description" content="FormX is a no-nonsense iOS workout tracker. Log sets in one tap, watch your numbers climb." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FormX – Terms of Service & Privacy Policy</title>
+
 <style>
-  :root{
-    --bg:#0A0A0B; --surface:#141417; --line:#23232A;
-    --text:#F5F5F7; --muted:#8A8A93; --lime:#C6FF3D; --red:#FF2E3A;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Inter","SF Pro Display",system-ui,sans-serif;
-    -webkit-font-smoothing:antialiased}
-  a{color:var(--lime);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:860px;margin:0 auto;padding:48px 24px}
-  nav{display:flex;justify-content:space-between;align-items:center;
-    padding:20px 24px;border-bottom:1px solid var(--line);position:sticky;top:0;
-    background:rgba(10,10,11,.85);backdrop-filter:blur(12px);z-index:10}
-  nav .brand{font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-  nav .brand span{color:var(--lime)}
-  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
-  nav ul a{color:var(--muted);font-size:14px;text-transform:uppercase;letter-spacing:.1em}
-  nav ul a:hover{color:var(--text);text-decoration:none}
-  .hero{padding:96px 24px 72px;text-align:center;border-bottom:1px solid var(--line)}
-  .hero h1{font-size:clamp(40px,7vw,72px);margin:0 0 16px;line-height:1.02;letter-spacing:-.02em;font-weight:800}
-  .hero h1 em{font-style:normal;color:var(--lime)}
-  .hero p{color:var(--muted);font-size:18px;max-width:560px;margin:0 auto 32px}
-  .cta{display:inline-block;background:var(--lime);color:#0A0A0B;padding:14px 24px;
-    border-radius:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:14px}
-  .cta:hover{text-decoration:none;transform:translateY(-1px);transition:transform .15s}
-  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:16px;padding:56px 24px;max-width:1000px;margin:0 auto}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-  .card h3{margin:0 0 8px;font-size:16px;text-transform:uppercase;letter-spacing:.08em}
-  .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-  .doc{border-top:1px solid var(--line);padding-top:40px;margin-top:40px}
-  .doc h2{font-size:32px;letter-spacing:-.01em;margin:0 0 6px}
-  .doc .updated{color:var(--muted);font-size:13px;margin-bottom:28px}
-  .doc h3{margin-top:28px;font-size:17px;letter-spacing:.02em}
-  .doc p,.doc li{color:#D4D4DA;line-height:1.65;font-size:15px}
-  .doc ul{padding-left:20px}
-  footer{border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--muted);font-size:13px;margin-top:64px}
-  footer a{color:var(--muted)}
-  hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.home-button, .nav-button {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 40px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+hr.section-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 60px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #777;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+    margin: 0 10px;
+}
 </style>
+<link rel="icon" type="image/png" href="ChatGPT Image Nov 7, 2025 at 07_51_14 PM copy 4.png">
 </head>
+
 <body>
 
-<nav>
-  <div class="brand">FORM<span>X</span></div>
-  <ul>
-    <li><a href="#terms">Terms</a></li>
-    <li><a href="#privacy">Privacy</a></li>
-    <li><a href="/support">Support</a></li>
-  </ul>
-</nav>
+<header>
+    <a href="/index.html" class="home-button">← Home</a>
+    <a href="#terms" class="nav-button">Terms</a>
+    <a href="#privacy" class="nav-button">Privacy</a>
+</header>
 
-<section class="hero">
-  <h1>Train harder.<br/><em>Track smarter.</em></h1>
-  <p>FormX is a no-nonsense iOS workout tracker. Log sets in one tap, follow real programs, watch your numbers climb.</p>
-  <a class="cta" href="#">Download on the App Store</a>
-</section>
+<main>
 
-<section class="features">
-  <div class="card"><h3>One-tap logging</h3><p>Previous-set ghosts, supersets, warmups. Fastest log on iOS.</p></div>
-  <div class="card"><h3>Rest timer</h3><p>Auto-starts on set complete with haptics and background alerts.</p></div>
-  <div class="card"><h3>PRs & progress</h3><p>Per-exercise charts, estimated 1RM, volume, streaks, heatmap.</p></div>
-  <div class="card"><h3>Routines</h3><p>PPL, Upper/Lower, Full Body — or build your own.</p></div>
-</section>
+<!-- ============================= -->
+<!-- TERMS OF SERVICE -->
+<!-- ============================= -->
+<article id="terms">
 
-<div class="wrap">
+<h1>FormX – Terms of Service</h1>
+<p><strong>Last updated:</strong> 20 April 2026</p>
+<p>By accessing or using the FormX mobile application, you agree to these Terms of Service. If you do not agree, do not use the app.</p>
 
-<article id="terms" class="doc">
-  <h2>Terms of Service</h2>
-  <div class="updated">Last updated: April 20, 2026</div>
+<h2>1. What FormX Does</h2>
+<p>FormX is a gym training and workout tracking application.</p>
+<ul>
+<li>Workout and set/rep/weight logging</li>
+<li>Routine and program templates</li>
+<li>Rest timer and training guidance</li>
+<li>Progress analytics, personal records, and charts</li>
+<li>Body metric tracking (weight, measurements)</li>
+<li>Exercise library with form cues</li>
+</ul>
+<p>FormX is a training log and guidance tool. It assists and tracks — it does not promise fitness outcomes.</p>
 
-  <p>Welcome to <strong>FormX</strong> ("FormX," "we," "us," or "our"). These Terms of Service ("Terms") govern your access to and use of the FormX mobile application and related services (the "Service"). By using FormX, you agree to be bound by these Terms.</p>
+<h2>2. Health & Fitness Disclaimer</h2>
+<p>FormX is not a medical device and does not provide medical advice. Exercise involves risk of injury. You are responsible for training within your ability and consulting a qualified healthcare professional before beginning any new training program, especially if you have an injury, medical condition, or are pregnant.</p>
+<p>You agree to stop exercising and seek medical help if you experience pain, dizziness, or any symptoms of distress.</p>
 
-  <h3>1. Eligibility</h3>
-  <p>You must be at least 13 years old (or the minimum digital-consent age in your country).</p>
+<h2>3. No Guarantee of Results</h2>
+<p>If you do not achieve expected fitness results, strength progress, or aesthetic goals, this is not FormX's responsibility and does not entitle you to a refund. Results depend on effort, consistency, genetics, nutrition, recovery, and many external factors outside FormX's control.</p>
 
-  <h3>2. Your Account</h3>
-  <p>You may use FormX in guest mode, or sign up with email, Apple, or Google. You are responsible for your credentials and for all activity under your account.</p>
+<h2>4. Training Recommendations & Programs</h2>
+<p>Routines, templates, rest timers, and suggested weights are general guidance, not personalised coaching. You are responsible for adjusting loads, exercise selection, and volume to your own ability and equipment.</p>
 
-  <h3>3. Health & Fitness Disclaimer</h3>
-  <p>FormX is a workout-logging tool, not a medical device. Consult a physician before starting any exercise program. Exercise at your own risk. Demos, form cues, suggested weights, rest times, and estimated 1RM values are informational only. You are solely responsible for your training decisions.</p>
+<h2>5. Progress Tracking, PRs & Analytics</h2>
+<p>Charts, estimated one-rep maxes, volume metrics, and personal record detection are calculated from the data you log. They are directional tools influenced by input accuracy, not precise measurements.</p>
 
-  <h3>4. Subscriptions & Payments</h3>
-  <ul>
-    <li>FormX Pro offers Weekly, Monthly, and Yearly auto-renewing subscriptions via the App Store.</li>
-    <li>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current period.</li>
-    <li>Manage or cancel in Settings → Apple ID → Subscriptions.</li>
-    <li>Refunds are handled by Apple under Apple's refund policy.</li>
-  </ul>
+<h2>6. Exercise Library & Form Cues</h2>
+<p>Exercise descriptions, demonstrations, and form cues are general educational content. They do not replace supervision by a qualified coach or trainer. Use mirrors, spotters, and safety equipment as appropriate.</p>
 
-  <h3>5. License</h3>
-  <p>We grant you a personal, non-exclusive, non-transferable license to use FormX on Apple devices you own or control, under the App Store Usage Rules.</p>
+<h2>7. User Content</h2>
+<p>You may create routines, log workouts, add notes, and upload body-metric photos. You confirm that any content you upload is your own or you have permission to use it.</p>
+<p>You retain ownership of your content. By uploading content, you grant FormX a worldwide, non-exclusive, royalty-free license to store, display, and process that content solely to provide the app's features to you.</p>
 
-  <h3>6. Your Content</h3>
-  <p>You own the workout data you create. You grant us a limited license to store, process, and display it solely to operate the Service for you. We do not sell your data.</p>
+<h2>8. Eligibility (Age)</h2>
+<p>You must be at least 15 years old to use FormX. Users under 18 should train with guardian awareness and should not use the app to pursue extreme cutting, bulking, or weight-manipulation protocols.</p>
 
-  <h3>7. Acceptable Use</h3>
-  <p>No reverse-engineering, no unlawful use, no interference with the Service, no automated scraping, no reselling without written permission.</p>
+<h2>9. Abuse, Illegal Use & Hacking</h2>
+<p>You agree not to upload illegal content, harass others, attempt to hack, exploit, or reverse engineer the app. You must not impersonate others or manipulate shared content.</p>
 
-  <h3>8. Third-Party Services</h3>
-  <p>FormX uses Apple (App Store, Sign in with Apple), Supabase (auth and sync), and Superwall (subscriptions). Your use of those services is governed by their own terms.</p>
+<h2>10. Account Suspension, Bans & Refunds</h2>
+<p>If suspended or banned for violating these Terms, no refunds will be issued.</p>
 
-  <h3>9. Intellectual Property</h3>
-  <p>FormX, the FormX name, logo, design, and software are owned by Salome Amaglobeli.</p>
+<h2>11. Payments, Subscriptions & Refund Policy</h2>
+<p>FormX may offer premium subscription tiers (weekly, monthly, yearly). Prices are shown in-app before purchase and billed through Apple's App Store.</p>
+<p>All payments are non-refundable except where required by law. Cancellation stops future billing but does not refund past charges. Manage or cancel subscriptions via your Apple ID settings.</p>
 
-  <h3>10. Termination</h3>
-  <p>You may stop using FormX anytime. We may suspend or terminate access for violations or if we discontinue the Service.</p>
+<h2>12. Intellectual Property</h2>
+<p>You retain ownership of your content. FormX retains ownership of its technology, branding, exercise database, and app design.</p>
 
-  <h3>11. Disclaimer of Warranties</h3>
-  <p>The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind.</p>
+<h2>13. Third-Party Services</h2>
+<p>FormX relies on third-party services including Apple's App Store, push-notification infrastructure, and analytics providers. Their terms apply to their portion of the service.</p>
 
-  <h3>12. Limitation of Liability</h3>
-  <p>To the maximum extent permitted by law, FormX will not be liable for indirect, incidental, special, consequential, or punitive damages, including injury sustained during training. Our total liability is capped at the greater of amounts paid in the last 12 months or USD $50.</p>
+<h2>14. Disclaimer of Warranties</h2>
+<p>FormX is provided "as is" without warranties of any kind, express or implied.</p>
 
-  <h3>13. Indemnification</h3>
-  <p>You agree to indemnify Salome Amaglobeli for claims arising from your use of the Service or violation of these Terms.</p>
+<h2>15. Limitation of Liability</h2>
+<p>To the maximum extent permitted by law, FormX is not liable for indirect, incidental, consequential, or special damages, including injury sustained during training, loss of data, or loss of progress.</p>
 
-  <h3>14. Changes</h3>
-  <p>We may update these Terms. Material changes will be announced in-app or by email.</p>
+<h2>16. Agreement Not to Sue</h2>
+<p>You agree not to bring claims arising from dissatisfaction with training results, tracking accuracy, or AI-generated guidance.</p>
 
-  <h3>15. Governing Law</h3>
-  <p>These Terms are governed by the laws of England and Wales, United Kingdom. Disputes will be resolved in the competent courts of England and Wales, unless local consumer-protection law grants you stronger rights.</p>
+<h2>17. Indemnification</h2>
+<p>You agree to indemnify FormX from claims arising from your use of the app, your content, or your violation of these Terms.</p>
 
-  <h3>16. Apple-Specific Terms</h3>
-  <p>These Terms are between you and Salome Amaglobeli, not Apple. Apple is a third-party beneficiary of these Terms.</p>
+<h2>18. Apple-Specific Terms</h2>
+<p>These Terms are between you and FormX, not Apple. Apple is not responsible for the app or its content. In the event of any failure to conform to applicable warranty, you may notify Apple, which will refund the purchase price; otherwise Apple has no warranty obligation. Apple is a third-party beneficiary of these Terms and may enforce them against you.</p>
 
-  <h3>17. Contact</h3>
-  <p>
-    Salome Amaglobeli<br/>
-    Email: <a href="mailto:fadeapporg@gmail.com">fadeapporg@gmail.com</a><br/>
-    Support: <a href="https://fadeapp.org/support">fadeapp.org/support</a><br/>
-    United Kingdom
-  </p>
+<h2>19. Data Storage & Deletion</h2>
+<p>You may delete your data at any time via Settings → Delete My Data. See the Privacy Policy below for full details.</p>
+
+<h2>20. Termination by You</h2>
+<p>You may stop using FormX at any time by deleting the app.</p>
+
+<h2>21. Changes to These Terms</h2>
+<p>FormX may update these Terms. Material changes will be communicated in-app or on this page. Continued use after changes means acceptance.</p>
+
+<h2>22. Severability</h2>
+<p>If any provision is invalid, the rest remains in effect.</p>
+
+<h2>23. Entire Agreement</h2>
+<p>These Terms and the Privacy Policy below form the full agreement between you and FormX.</p>
+
+<h2>24. Governing Law</h2>
+<p>These Terms are governed by the laws of England and Wales. Disputes are subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+<h2>25. Contact</h2>
+<p>
+Salome Amaglobeli<br>
+fadeapporg@gmail.com<br>
+<a href="https://fadeapp.org/support" style="color:#fff;">fadeapp.org/support</a><br>
+United Kingdom
+</p>
+
 </article>
 
-<article id="privacy" class="doc">
-  <h2>Privacy Policy</h2>
-  <div class="updated">Last updated: April 20, 2026</div>
+<hr class="section-divider">
 
-  <p>This Privacy Policy describes how Salome Amaglobeli collects, uses, and protects information when you use the FormX iOS app.</p>
+<!-- ============================= -->
+<!-- PRIVACY POLICY -->
+<!-- ============================= -->
+<article id="privacy">
 
-  <h3>1. Information We Collect</h3>
-  <ul>
-    <li><strong>Account info:</strong> email or Apple/Google identifier. Guest mode is supported.</li>
-    <li><strong>Workout data:</strong> routines, exercises, sets, reps, weights, rest times, PRs, body measurements, bodyweight, notes.</li>
-    <li><strong>Device & diagnostic info:</strong> app and iOS version, device model, crash logs, basic usage events.</li>
-    <li><strong>Subscription info:</strong> entitlement state from Apple and Superwall. We never receive your card number.</li>
-  </ul>
+<h1>FormX – Privacy Policy</h1>
+<p><strong>Last updated:</strong> 20 April 2026</p>
+<p>This Privacy Policy explains how FormX collects, uses, and protects your information when you use the FormX mobile application. FormX is operated from the United Kingdom and complies with the UK GDPR and the Data Protection Act 2018.</p>
 
-  <h3>2. How We Use Information</h3>
-  <p>To sync your workouts across devices, authenticate you, run the paywall and entitlements, diagnose crashes, and respond to support requests.</p>
+<h2>1. Who We Are (Data Controller)</h2>
+<p>
+Salome Amaglobeli<br>
+fadeapporg@gmail.com<br>
+<a href="https://fadeapp.org/support" style="color:#fff;">fadeapp.org/support</a><br>
+United Kingdom
+</p>
 
-  <h3>3. Legal Bases (UK/EEA)</h3>
-  <p>Contract, legitimate interests, consent (for optional notifications), and legal obligation, under UK GDPR.</p>
+<h2>2. Information We Collect</h2>
+<ul>
+<li><strong>Workout data:</strong> exercises, sets, reps, weights, routines, notes, rest times, and timestamps you log.</li>
+<li><strong>Body metrics:</strong> bodyweight and measurements you enter voluntarily.</li>
+<li><strong>Profile data:</strong> username, preferred units (kg/lb), experience level, goals, and accent color preferences.</li>
+<li><strong>Optional photos:</strong> progress photos you choose to attach. Stored on your device unless you explicitly export or back up.</li>
+<li><strong>Device data:</strong> device model, iOS version, app version, crash reports, and anonymised usage events.</li>
+<li><strong>Purchase data:</strong> subscription status and receipts handled via Apple. We do not receive card details.</li>
+</ul>
 
-  <h3>4. Service Providers</h3>
-  <p>We share limited data with Apple, Supabase, and Superwall, each acting as a processor. We do not sell personal information.</p>
+<h2>3. How We Use Your Information</h2>
+<ul>
+<li>To provide the core tracking, analytics, and training features of the app</li>
+<li>To calculate personal records, charts, streaks, and progress estimates</li>
+<li>To improve app stability, fix bugs, and understand general feature usage</li>
+<li>To process subscription purchases and prevent abuse</li>
+<li>To communicate important service updates when necessary</li>
+</ul>
 
-  <h3>5. Data Retention</h3>
-  <p>We retain your data while your account is active. If you delete your account from Profile → Settings, we delete or anonymize it within 30 days, except where law requires retention.</p>
+<h2>4. Legal Bases (UK GDPR)</h2>
+<ul>
+<li><strong>Performance of a contract:</strong> to deliver the app's features you've signed up for.</li>
+<li><strong>Legitimate interests:</strong> to secure the service, fix bugs, and improve the product.</li>
+<li><strong>Consent:</strong> for optional analytics, notifications, or marketing communications.</li>
+<li><strong>Legal obligation:</strong> where required to comply with applicable law.</li>
+</ul>
 
-  <h3>6. Your Rights</h3>
-  <p>Under UK GDPR you can access, correct, delete, restrict, port, or object to processing of your data. You may complain to the UK ICO at <a href="https://ico.org.uk">ico.org.uk</a>. To exercise rights, email <a href="mailto:fadeapporg@gmail.com">fadeapporg@gmail.com</a>.</p>
+<h2>5. AI & Automated Processing</h2>
+<p>FormX may use automated calculations (such as estimated one-rep maxes, volume metrics, and progress trends) derived from the data you log. These are statistical estimates, not precise measurements, and do not constitute profiling with legal effects on you.</p>
 
-  <h3>7. Security</h3>
-  <p>TLS in transit, access controls, encrypted storage via Supabase. Use a strong, unique password.</p>
+<h2>6. Data Storage</h2>
+<p>Your workout and body-metric data is stored primarily on your device. If you enable cloud backup or sync features (where available), that data is stored by trusted infrastructure providers under standard data-processing agreements.</p>
 
-  <h3>8. International Transfers</h3>
-  <p>Data may be processed in the US or other countries where our providers operate, under Standard Contractual Clauses where required.</p>
+<h2>7. Third-Party Processors</h2>
+<ul>
+<li><strong>Apple</strong> — App Store, in-app purchases, push notifications</li>
+<li><strong>Cloud storage / backend providers</strong> — if you enable sync or backup</li>
+<li><strong>Analytics providers</strong> — anonymised usage and crash reporting</li>
+</ul>
+<p>These processors are bound by contracts that require appropriate safeguards, including for any transfers outside the UK/EEA (e.g., Standard Contractual Clauses).</p>
 
-  <h3>9. Changes</h3>
-  <p>We may update this Policy. Material changes will be announced in-app or by email.</p>
+<h2>8. Data Sharing</h2>
+<p>We do not sell your personal data. We do not share it with third parties for their own marketing. Data is only shared with the processors listed above or where required by law.</p>
 
-  <h3>10. Contact</h3>
-  <p>
-    Salome Amaglobeli<br/>
-    Email: <a href="mailto:fadeapporg@gmail.com">fadeapporg@gmail.com</a><br/>
-    Support: <a href="https://fadeapp.org/support">fadeapp.org/support</a><br/>
-    United Kingdom
-  </p>
+<h2>9. Data Retention</h2>
+<p>Workout and profile data is retained while your account or app installation is active. You may delete your data at any time via Settings → Delete My Data. Backups and logs may persist for a short period (typically up to 30 days) before being purged.</p>
+
+<h2>10. Your Rights (UK GDPR)</h2>
+<p>You have the right to:</p>
+<ul>
+<li>Access the personal data we hold about you</li>
+<li>Request correction of inaccurate data</li>
+<li>Request deletion of your data</li>
+<li>Restrict or object to certain processing</li>
+<li>Request data portability (export)</li>
+<li>Withdraw consent at any time, where processing is based on consent</li>
+</ul>
+<p>To exercise these rights, contact <a href="mailto:fadeapporg@gmail.com" style="color:#fff;">fadeapporg@gmail.com</a>.</p>
+
+<h2>11. Children</h2>
+<p>FormX is not intended for children under 15. We do not knowingly collect personal data from children under that age. Parents who believe their child has provided data can contact us for deletion.</p>
+
+<h2>12. Security</h2>
+<p>We apply reasonable technical and organisational measures to protect your data, including on-device encryption provided by iOS and encrypted connections to any backend services. No system is perfectly secure.</p>
+
+<h2>13. Changes to This Policy</h2>
+<p>We may update this Privacy Policy. Material changes will be communicated in-app or on this page. Continued use after changes means acceptance.</p>
+
+<h2>14. Complaints</h2>
+<p>If you have a complaint about how we handle your data, contact us first at <a href="mailto:fadeapporg@gmail.com" style="color:#fff;">fadeapporg@gmail.com</a>. You also have the right to lodge a complaint with the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" style="color:#fff;">ico.org.uk</a>.</p>
+
+<h2>15. Contact</h2>
+<p>
+Salome Amaglobeli<br>
+fadeapporg@gmail.com<br>
+<a href="https://fadeapp.org/support" style="color:#fff;">fadeapp.org/support</a><br>
+United Kingdom
+</p>
+
 </article>
 
-</div>
+</main>
 
 <footer>
-  © 2026 Salome Amaglobeli · FormX ·
-  <a href="#terms">Terms</a> ·
-  <a href="#privacy">Privacy</a> ·
-  <a href="/support">Support</a>
+<a href="/faq.html">FAQ</a> |
+<a href="/legal.html#terms">Terms of Service</a> |
+<a href="/legal.html#privacy">Privacy Policy</a>
 </footer>
 
 </body>
